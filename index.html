@@ -23,10 +23,6 @@
       id="scene"
     >
     
-      <a-assets>
-        <img id="myImage" src="img.jpg" alt="My Image">
-      </a-assets>
-    
       <a-marker
         type="pattern"
         url="pattern-kirieshka.patt"
@@ -36,24 +32,13 @@
         id="markerA"
       >
         <a-image
-            src="#myImage"
+            src="img.jpg"
             position="0 0 0"
             rotation="-90 0 0"
             scale="1 1 1"
             class="clickable"
             gesture-handler
         ></a-image>
-      </a-marker>
-        
-        <a-entity
-          id="bowser-model"
-          gltf-model="#bowser"
-          position="0 0 0"
-          scale="1 1 1"
-          class="clickable"
-          gesture-handler
-        >
-        </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
